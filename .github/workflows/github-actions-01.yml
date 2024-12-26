@@ -1,6 +1,6 @@
 name: Test GitHub Actions-01
 run-name: Run GitHub Actions-01
-on: workflow_dispatch
+on: push
 
 jobs:
   Test-GitHub-Actions:
