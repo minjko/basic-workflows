@@ -1,4 +1,4 @@
-name: Jobs Workflow
+name: Jobs Workflow - add commit message "skip ci"
 on: workflow_dispatch 
 jobs:
   echo:
