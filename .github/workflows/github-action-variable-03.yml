@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Say Hello VAR_TEST" 
-        run: echo "Hello  ${{ vars.VARS_TEST }}"
+        run: echo "Hello ${{ vars.VARS_TEST }}"
