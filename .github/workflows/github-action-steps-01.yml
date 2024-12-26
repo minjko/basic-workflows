@@ -1,10 +1,10 @@
 name: Steps workflow
-on: push
+on: workflow_dispatch
 jobs:
-  notify:
+  keep-going-work:
     runs-on: ubuntu-latest
     steps:
-      - id: random
-        run: exit $(($RANDOM % 2 == 0))
-      - if: always() 
-        run: echo ${{ steps.random.outcome }}
+      - id: dev
+        continue-on-error: true
+        run: exit 1
+      - run: echo "Keep going job"
