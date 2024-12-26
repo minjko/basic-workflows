@@ -1,5 +1,5 @@
-name: Jobs Workflow - add commit message "skip ci"
-on: workflow_dispatch 
+name: Jobs Workflow
+on: push
 jobs:
   echo:
     runs-on: ubuntu-latest
