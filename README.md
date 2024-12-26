@@ -6,11 +6,11 @@
 - name, on, jobs, steps, run 등
 - context 영역
   - [x] env
-  [x] secrets
-  [x] needs
-  [x] github
-  [x] var
-  [x] job
-  [x] steps
-  [x] runners
-  [x] inputs
+  - [x] secrets
+  - [x] needs
+  - [x] github
+  - [x] var
+  - [x] job
+  - [x] steps
+  - [x] runners
+  - [x] inputs
