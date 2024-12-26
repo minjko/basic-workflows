@@ -1,0 +1,18 @@
+name: Greeting on variable day
+
+on:
+  workflow_dispatch (수동으로 설정_manually)
+
+env: (환경 변수. 아래 jobs내에서 사용할 수 있는 범위)
+  DAY_OF_WEEK: Thursday 
+
+jobs: (jobs 내부의 env와 위의 env 차이는 jobs 영역에서만 사용할 수 있는 지역변수와 전체 yml 스크립트에서 사용할 수 있는 전역변수의 차이이다
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      Greeting: Hello
+    steps:
+      - name: "Say Hello GithubActions it's Thursday"
+        run: echo "$Greeting $First_Name. Today is $DAY_OF_WEEK!"
+        env:       (github내 변수 사용 방법 : $)
+          First_Name: GithubActions
