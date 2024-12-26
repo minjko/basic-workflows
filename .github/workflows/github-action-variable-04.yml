@@ -1,0 +1,12 @@
+name: Test Vars context test (additional)
+run-name: Run Vars context test (additional)
+
+on:
+  workflow_dispatch 
+
+jobs:
+  vars-context-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Say Hello VAR_TEST" 
+        run: echo "Hello ${{ vars.VARS_TEST }}"
